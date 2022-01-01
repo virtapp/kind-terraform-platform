@@ -2,15 +2,15 @@
 
 The objective of this project is to be able to quickly setup a data platform on your local machine via kind. It should also help you get familiar with production-ready setup and tools such as terraform, kubernetes and helm.
 
-## 🏛️ Architecture
+🏛️ Architecture
 
 The following diagram shows the services currently being used, all running in a kind cluster:
 
 Will be later
 
-## 🚀 Get started
+🚀 Get started
 
-### Prerequisites
+Prerequisites
 
 Install the following tools:
 - [awscli](https://aws.amazon.com/cli/)
@@ -21,7 +21,7 @@ Install the following tools:
 
 
 
-## 📜 Roadmap
+📜 Roadmap
 
 
 
