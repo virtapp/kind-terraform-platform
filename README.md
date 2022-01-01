@@ -30,47 +30,10 @@ Install the following tools:
 - [task](https://taskfile.dev/)
 - [terraform](https://www.terraform.io/)
 
-My docker setup i.e. `docker info`
-```
-...
-CPUs: 10
-Total Memory: 15.6GiB
-...
-```
-If you give the docker daemon less resources, make sure to adjust the `timeout` parameter in the helm releases as creating them can take up more time.
 
-### Setup
-
-First create the main infrastructure by running the following command:
-```bash
-task -t infra/Taskfile.yml setup
-```
-Then create the localstack services, for this you first need to expose localstack first by running the following:
-```bash
-task -t infra/Taskfile.yml expose:localstack
-```
-and then create the services by running the following:
-```bash
-task -t infra/Taskfile.yml setup:localstack-services
-```
-_See [infra](infra/README.md) for more information about the projects infrastructure._
 
 ## 📜 Roadmap
 
 You can find what is being worked on and what is to do in the [project](https://github.com/feluelle/kind-data-platform/projects/1).
 
-## ❤️ Contributing
 
-You're welcome to join this project and I would be more than happy to have you on board. Feel free to raise any issue you might encounter or open a PR to address it. Check out [CI](CI.md) to learn more about how we develop and test code.
-
-If you want to jump right into it, here are..
-
-[![Good first issues open](https://img.shields.io/github/issues/feluelle/kind-data-platform/good%20first%20issue.svg?label=good%20first%20issues)](https://github.com/feluelle/kind-data-platform/issues?q=is%3Aopen+is%3Aissue+label%3A"good+first+issue")
-
-## 💬 Feedback
-
-In case you like the project, just follow me..
-
-[![Github followers](https://img.shields.io/github/followers/feluelle?label=Follow&style=social)](https://github.com/feluelle)
-
-In case you don't like the project or have any feedback for me drop me a mail at feluelle@pm.me.
